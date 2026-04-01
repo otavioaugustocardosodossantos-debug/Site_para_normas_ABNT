@@ -1,0 +1,168 @@
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+
+<html lang="pt-br"> <!-- Início do HTML e define o idioma como português do Brasil -->
+
+<head> <!-- Cabeçalho da página (configurações invisíveis ao usuário) -->
+
+<meta charset="UTF-8"> <!-- Define a codificação de caracteres (permite acentos, ç, etc.) -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Faz o site ser responsivo (adaptar para celular e diferentes telas) -->
+
+<title>Aplicação da ABNT NBR 17225</title> <!-- Título da aba do navegador -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Importa a biblioteca de ícones Font Awesome -->
+
+<link rel="stylesheet" href="Aplicacao.css">
+<!-- Conecta o arquivo CSS que estiliza a página -->
+
+</head> <!-- Fim do head -->
+
+<body> <!-- Início do conteúdo visível -->
+
+<header> <!-- Cabeçalho da página -->
+
+<nav class="menu"> <!-- Menu de navegação -->
+    <ul> <!-- Lista não ordenada -->
+        <li>
+            <a href="01.html">
+                <i class="fa-solid fa-house"></i> Início
+            </a>
+        </li> <!-- Link com ícone de casa -->
+
+        <li>
+            <a href="Principais_ponto_da_norma.html">
+                <i class="fa-solid fa-book"></i> Principais Pontos
+            </a>
+        </li> <!-- Link com ícone de livro -->
+
+        <li>
+            <a href="aplicacao.html">
+                <i class="fa-solid fa-laptop"></i> Aplicação
+            </a>
+        </li> <!-- Link com ícone de laptop -->
+
+        <li>
+            <a href="impacto.html">
+                <i class="fa-solid fa-chart-line"></i> Impacto
+            </a>
+        </li> <!-- Link com ícone de gráfico -->
+    </ul> <!-- Fim da lista -->
+</nav> <!-- Fim do menu -->
+
+<h1>Aplicação da Norma</h1> <!-- Título principal da página -->
+
+</header> <!-- Fim do header -->
+
+<section class="card"> <!-- Seção de conteúdo em formato de "card" -->
+
+<h2>Como a norma é aplicada</h2> <!-- Título da seção -->
+
+<p>
+A ABNT NBR 17225 estabelece diretrizes...
+</p> <!-- Texto explicativo -->
+
+</section> <!-- Fim da seção -->
+
+<section class="card"> <!-- Outra seção -->
+
+<h2>Exemplo de Aplicação</h2> <!-- Título -->
+
+<p>
+Em um trabalho acadêmico...
+</p> <!-- Texto -->
+
+<ul> <!-- Lista de exemplos -->
+<li>Títulos organizados por níveis</li> <!-- Item -->
+<li>Uso correto de fonte e tamanho</li> <!-- Item -->
+<li>Padronização de margens</li> <!-- Item -->
+<li>Clareza na apresentação do conteúdo</li> <!-- Item -->
+</ul>
+
+</section> <!-- Fim -->
+
+<section class="card"> <!-- Seção sobre hierarquia -->
+
+<h2>Hierarquia de Títulos</h2> <!-- Título -->
+
+<div class="conteudo"> <!-- Container interno -->
+
+<h3>Título Principal</h3> <!-- Nível de título -->
+<h4>Seção</h4> <!-- Subnível -->
+<h5>Subseção</h5> <!-- Subnível menor -->
+
+<p>
+A norma ABNT define níveis...
+</p> <!-- Explicação -->
+
+</div> <!-- Fim da div -->
+
+</section> <!-- Fim da seção -->
+
+<section class="interativo"> <!-- Seção interativa -->
+
+<h2>Ver Aplicação da Norma</h2> <!-- Título -->
+
+<button onclick="mostrarAplicacao()">
+Mostrar exemplo
+</button>
+<!-- Botão que chama uma função JavaScript chamada "mostrarAplicacao()" -->
+
+<p id="resultado"></p>
+<!-- Parágrafo vazio que será preenchido pelo JavaScript -->
+
+</section> <!-- Fim da seção -->
+
+<section class="comparacao"> <!-- Seção de comparação -->
+
+<div class="grid" id="comparacao"> <!-- Container em formato de grade -->
+
+<div class="card ruim"> <!-- Card mostrando exemplo ruim -->
+
+<h3>❌ Sem Norma</h3> <!-- Título -->
+
+<div class="site-ruim"> <!-- Conteúdo desorganizado -->
+
+<h4>TÍTULO PRINCIPAL</h4>
+
+<p>
+texto pequeno sem organização...
+</p>
+
+<h4>Subtítulo</h4>
+
+<p>outro texto desalinhado</p>
+
+</div> <!-- Fim do conteúdo ruim -->
+
+</div> <!-- Fim do card ruim -->
+
+<div class="card bom"> <!-- Card mostrando exemplo correto -->
+
+<h3>✅ Com ABNT</h3> <!-- Título -->
+
+<div class="site-bom"> <!-- Conteúdo organizado -->
+
+<h3>Título Principal</h3>
+<h4>Seção</h4>
+<h5>Subseção</h5>
+
+<p>
+Texto organizado com hierarquia correta...
+</p>
+
+</div> <!-- Fim do conteúdo bom -->
+
+</div> <!-- Fim do card bom -->
+
+</div> <!-- Fim da grid -->
+
+</section> <!-- Fim da seção -->
+
+<script src="aplicacao_script.js"></script> 
+<!-- Importa o JavaScript que adiciona interatividade -->
+
+</body> <!-- Fim do body -->
+
+</html> <!-- Fim do HTML -->

@@ -1,0 +1,246 @@
+/* Estilo geral da página */
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    /* Define a fonte padrão do site */
+
+    background: #f4f6f9; 
+    /* Cor de fundo clara da página */
+
+    margin: 0; 
+    /* Remove margem padrão do navegador */
+
+    padding: 0; 
+    /* Remove espaçamento interno padrão */
+}
+
+
+/* MENU */
+.menu {
+    background: linear-gradient(90deg, #2c3e50, #1f3a5f); 
+    /* Fundo com gradiente horizontal (de azul escuro para outro tom) */
+
+    padding: 15px 30px; 
+    /* Espaçamento interno (cima/baixo 15px, lados 30px) */
+
+    border-radius: 20px; 
+    /* Bordas arredondadas */
+}
+
+.menu ul {
+    list-style: none; 
+    /* Remove as bolinhas da lista */
+
+    display: flex; 
+    /* Coloca os itens lado a lado */
+
+    justify-content: center; 
+    /* Centraliza os itens horizontalmente */
+
+    gap: 30px; 
+    /* Espaço entre os itens do menu */
+}
+
+.menu a {
+    text-decoration: none; 
+    /* Remove o sublinhado dos links */
+
+    color: white; 
+    /* Cor do texto */
+
+    font-weight: bold; 
+    /* Texto em negrito */
+
+    transition: 0.3s; 
+    /* Suaviza animações (hover) */
+}
+
+.menu a:hover {
+    color: #00d4ff; 
+    /* Muda a cor do link ao passar o mouse */
+}
+
+
+
+/* ÁREA PRINCIPAL */
+#norma{
+    max-width: 900px; 
+    /* Largura máxima da área */
+
+    margin: auto; 
+    /* Centraliza horizontalmente */
+
+    padding: 40px; 
+    /* Espaçamento interno */
+
+    background: white; 
+    /* Fundo branco */
+
+    border-radius: 10px; 
+    /* Bordas arredondadas */
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1); 
+    /* Sombra leve */
+
+    animation: aparecer 1s ease; 
+    /* Aplica animação de entrada */
+
+    max-width: 900px; 
+    /* (Repetido) define largura máxima */
+
+    margin: 60px auto; 
+    /* Margem superior/inferior 60px + centralização */
+
+    padding: 50px; 
+    /* (Substitui o anterior) mais espaçamento interno */
+}
+
+
+/* TÍTULO PRINCIPAL */
+#norma h1{
+    font-size: 40px; 
+    /* Tamanho grande do texto */
+
+    color: #001755;; 
+    /* Cor azul escura (tem um ; extra aqui) */
+
+    font-size: 40px; 
+    /* (Repetido) tamanho da fonte */
+
+    text-align: center; 
+    /* Centraliza o texto */
+
+    animation: aparecer 1s ease; 
+    /* Aplica animação */
+}
+
+
+/* SUBTÍTULO */
+.subtitle{
+    text-align:center; 
+    /* Centraliza */
+
+    color:#363535; 
+    /* Cor cinza escuro */
+
+    font-size:18px; 
+    /* Tamanho do texto */
+
+    margin-top:10px; 
+    /* Espaço acima */
+
+    margin-bottom:30px; 
+    /* Espaço abaixo */
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+#norma h2{
+    font-size: 28px; 
+    /* Tamanho do subtítulo */
+
+    margin-top: 40px; 
+    /* Espaço acima */
+
+    color: #001755; 
+    /* Cor azul escuro */
+
+    border-left: 5px solid #2563eb; 
+    /* Linha azul na esquerda (efeito visual) */
+
+    padding-left: 10px; 
+    /* Espaço entre a linha e o texto */
+}
+
+
+/* PARÁGRAFOS */
+#norma p{
+    line-height: 1.7; 
+    /* Espaçamento entre linhas (melhora leitura) */
+
+    color: black; 
+    /* Cor do texto */
+}
+
+
+/* LISTA */
+.feature-list{
+    margin-top: 15px; 
+    /* Espaço acima da lista */
+}
+
+
+/* ITENS DA LISTA */
+.feature-list li{
+    background: #f1f5f9; 
+    /* Fundo claro */
+
+    padding: 12px; 
+    /* Espaçamento interno */
+
+    margin-bottom: 10px; 
+    /* Espaço entre os itens */
+
+    border-radius: 8px; 
+    /* Bordas arredondadas */
+
+    transition: 0.3s; 
+    /* Suaviza o hover */
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+.feature-list li:hover{
+    transform: translateX(8px); 
+    /* Move o item para a direita */
+
+    background: #e2e8f0; 
+    /* Muda a cor de fundo */
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1); 
+    /* Adiciona sombra */
+}
+
+
+
+/* ANIMAÇÃO */
+@keyframes aparecer{
+
+    from{
+        opacity:0; 
+        /* Começa invisível */
+
+        transform: translateY(20px); 
+        /* Começa deslocado para baixo */
+    }
+
+    to{
+        opacity:1; 
+        /* Fica visível */
+
+        transform: translateY(0); 
+        /* Volta para posição original */
+    }
+}
+
+
+/* ESCONDER SEÇÕES INICIALMENTE */
+section{
+    opacity:0; 
+    /* Invisível */
+
+    transform: translateY(30px); 
+    /* Deslocado para baixo */
+
+    transition: 0.6s; 
+    /* Suaviza animação */
+}
+
+
+/* MOSTRAR SEÇÕES COM ANIMAÇÃO */
+section.mostrar{
+    opacity:1; 
+    /* Fica visível */
+
+    transform: translateY(0); 
+    /* Volta para posição normal */
+}

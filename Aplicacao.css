@@ -1,0 +1,197 @@
+/* RESET BÁSICO */
+*{
+margin:0; /* remove todas as margens padrão dos elementos */
+padding:0; /* remove todos os espaçamentos internos padrão */
+box-sizing:border-box; /* faz com que padding e border não aumentem o tamanho total do elemento */
+}
+
+
+/* CORPO DO SITE */
+body{
+font-family:Arial, sans-serif; /* define a fonte principal do site */
+color:white; /* define a cor padrão do texto como branco */
+line-height:1.6; /* aumenta o espaçamento entre linhas para melhor leitura */
+}
+
+
+/*menu*/
+.menu {
+    background: linear-gradient(90deg, #2c3e50, #1f3a5f); /* fundo com gradiente horizontal */
+    padding: 15px 30px; /* espaço interno: 15px vertical e 30px horizontal */
+    border-radius: 20px; /* arredonda as bordas */
+}
+
+.menu ul {
+    list-style: none; /* remove as bolinhas da lista */
+    display: flex; /* ativa o layout flexível */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    gap: 30px; /* espaço entre os itens */
+}
+
+.menu a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: white; /* cor do texto branco */
+    font-weight: bold; /* deixa o texto em negrito */
+    transition: 0.3s; /* adiciona animação suave */
+}
+
+.menu a:hover {
+    color: #00d4ff; /* muda a cor ao passar o mouse */
+}
+
+
+/* CABEÇALHO */
+header{
+text-align:center; /* centraliza o conteúdo */
+padding:40px; /* espaço interno */
+color: aliceblue; /* cor do texto */
+box-shadow:0 5px 20px rgba(0,0,0,0.3); /* sombra ao redor */
+}
+
+header h1{
+font-size:32px; /* tamanho do título */
+color: black; /* cor preta para o título */
+}
+
+
+/* SEÇÕES */
+section{
+max-width:900px; /* largura máxima da seção */
+margin:40px auto; /* centraliza e adiciona espaço externo */
+padding:30px; /* espaço interno */
+background:#1e293b; /* fundo escuro */
+border-radius:10px; /* bordas arredondadas */
+box-shadow:0 10px 25px rgba(0,0,0,0.3); /* sombra */
+}
+
+
+/* TÍTULOS */
+h2{
+margin-bottom:15px; /* espaço abaixo do título */
+font-size:24px; /* tamanho do texto */
+}
+
+p{
+margin-bottom:15px; /* espaço abaixo dos parágrafos */
+}
+
+
+/* LISTA */
+ul{
+padding-left:20px; /* adiciona recuo à esquerda */
+}
+
+
+/* BLOCO DE EXEMPLO */
+.exemplo-box{
+background:#0f172a; /* fundo escuro */
+padding:20px; /* espaço interno */
+border-radius:8px; /* bordas arredondadas */
+margin-top:15px; /* espaço acima */
+}
+
+
+/* BOTÃO */
+button{
+background:#3b82f6; /* cor de fundo azul */
+color:white; /* cor do texto */
+border:none; /* remove borda padrão */
+padding:12px 25px; /* espaço interno */
+font-size:16px; /* tamanho do texto */
+border-radius:8px; /* bordas arredondadas */
+cursor:pointer; /* muda o cursor para "mãozinha" */
+transition:0.3s; /* animação suave */
+}
+
+button:hover{
+background:#2563eb; /* muda a cor ao passar o mouse */
+transform:scale(1.05); /* aumenta levemente o tamanho */
+}
+
+
+/* GRID DE EXEMPLOS */
+.grid{
+display:grid; /* ativa o layout em grade */
+grid-template-columns:1fr 1fr; /* cria duas colunas iguais */
+gap:30px; /* espaço entre os itens */
+margin-top:20px; /* espaço acima */
+}
+
+
+/* CARDS */
+.card{
+padding:20px; /* espaço interno */
+border-radius:10px; /* bordas arredondadas */
+color:white; /* cor do texto */
+box-shadow:0 10px 20px rgba(0,0,0,0.3); /* sombra */
+}
+
+
+/* ANIMAÇÃO DE APARECER */
+.card:hover{
+transform:translateY(-10px); /* move o card para cima */
+transition:0.3s; /* animação suave */
+}
+
+
+/* CARD SEM NORMA */
+.ruim{
+background:#991b1b; /* fundo vermelho (indica algo ruim) */
+}
+
+
+/* CARD COM NORMA */
+.bom{
+background:#065f46; /* fundo verde (indica algo bom) */
+}
+
+
+/* MINI SITES */
+.site-ruim{
+background:white; /* fundo branco */
+color:black; /* texto preto */
+padding:15px; /* espaço interno */
+border-radius:6px; /* bordas arredondadas */
+margin-top:10px; /* espaço acima */
+font-size:13px; /* texto menor */
+}
+
+.site-bom{
+background:white; /* fundo branco */
+color:black; /* texto preto */
+padding:15px; /* espaço interno */
+border-radius:6px; /* bordas arredondadas */
+margin-top:10px; /* espaço acima */
+}
+
+
+/* RESPONSIVO */
+@media (max-width:800px){ /* aplica regras quando a tela for menor que 800px */
+
+.grid{
+grid-template-columns:1fr; /* muda para uma coluna só */
+}
+
+
+header h1{
+font-size:26px; /* diminui o tamanho do título */
+}
+
+}
+
+
+/* ESCONDER COM ANIMAÇÃO */
+#comparacao{
+display:none; /* esconde o elemento */
+margin-top:30px; /* espaço acima */
+opacity:0; /* deixa invisível */
+transform:translateY(30px); /* desloca para baixo */
+transition:0.6s; /* animação suave */
+}
+
+/* QUANDO APARECE */
+#comparacao.ativo{
+display:grid; /* mostra como grid */
+opacity:1; /* torna visível */
+transform:translateY(0); /* volta à posição original */
+}

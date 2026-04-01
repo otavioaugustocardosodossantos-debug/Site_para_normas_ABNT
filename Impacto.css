@@ -1,0 +1,168 @@
+.menu {
+    background: linear-gradient(90deg, #abdeeb, #121d2b); /* cria um fundo com gradiente horizontal (90 graus) entre duas cores */
+    padding: 15px 30px ; /* adiciona espaço interno: 15px em cima/baixo e 30px nas laterais */
+    border-radius: 20px; /* deixa as bordas arredondadas */
+}
+
+.menu ul {
+    list-style: none; /* remove os marcadores (bolinhas) da lista */
+    display: flex; /* ativa o Flexbox para organizar os itens */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    gap: 30px; /* cria espaço de 30px entre os itens */
+}
+
+.menu a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: white; /* define a cor do texto como branco */
+    font-weight: bold; /* deixa o texto em negrito */
+    transition: 0.3s; /* adiciona animação suave de 0.3 segundos nas mudanças */
+}
+
+.menu a:hover {
+    color: #00d4ff; /* muda a cor do link ao passar o mouse */
+}
+
+
+.impacto { /* seleciona o elemento com a classe impacto */
+    padding:80px 10%; /* espaço interno grande: 80px vertical e 10% horizontal */
+    text-align:center; /* centraliza o texto */
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+    padding:100px 10%; /* sobrescreve o padding anterior (fica 100px vertical) */
+    text-align:center; /* repetido (não necessário) */
+    background:linear-gradient(135deg,#0f172a,#1e293b); /* fundo com gradiente diagonal */
+    color: white; /* cor do texto branca */
+}
+
+.impacto h1{
+    font-size:40px; /* tamanho do título */
+    margin-bottom:20px; /* espaço abaixo do título */
+    font-size:42px; /* sobrescreve o tamanho anterior */
+    margin-bottom:20px; /* repetido */
+}
+
+.impacto-texto{
+    max-width:600px; /* largura máxima de 600px */
+    margin:auto; /* centraliza horizontalmente */
+    opacity:0.8; /* deixa o texto levemente transparente */
+}
+
+.impacto-container{
+    display:flex; /* ativa Flexbox */
+    justify-content:center; /* centraliza os itens */
+    justify-content:center; /* repetido */
+    gap:30px; /* espaço entre os elementos */
+    flex-wrap:wrap; /* permite quebrar linha quando faltar espaço */
+    margin-top:60px; /* espaço acima do container */
+}
+
+.impacto-box{
+    background:#f5f5f5; /* fundo cinza claro */
+    padding:20px; /* espaço interno */
+    border-radius:10px; /* bordas arredondadas */
+    width:250px; /* largura fixa */
+    transition:0.3s; /* animação suave */
+}
+
+.impacto-box:hover{
+    transform:scale(1.05); /* aumenta levemente o tamanho ao passar o mouse */
+}
+
+
+
+
+.acessibilidade{
+    padding:80px 10%; /* espaço interno */
+    text-align:center; /* centraliza texto */
+    background:#f0f6ff; /* fundo azul bem claro */
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+}
+
+.acessibilidade h2{
+    font-size:40px; /* tamanho do subtítulo */
+    margin-bottom:20px; /* espaço abaixo */
+}
+
+.acessibilidade-box{
+    display:flex; /* ativa Flexbox */
+    gap:20px; /* espaço entre os itens */
+    margin-top:40px; /* espaço acima */
+    justify-content:center; /* centraliza itens */
+    flex-wrap:wrap; /* permite quebrar linha */
+}
+
+.item{
+    background:white; /* fundo branco */
+    padding:20px; /* espaço interno */
+    border-radius:10px; /* bordas arredondadas */
+    width:250px; /* largura fixa */
+    box-shadow:0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    opacity: 0; /* começa invisível */
+    transform: translateY(50px); /* desloca o elemento para baixo */
+    transition: 0.6s; /* animação suave */
+}
+
+.item:hover {
+    transform: scale(1.05); /* aumenta o tamanho ao passar o mouse */
+    transition: 0.3s; /* transição mais rápida no hover */
+}
+
+.item.mostrar {
+    opacity: 1; /* torna visível */
+    transform: translateY(0); /* volta à posição original */
+}
+
+
+
+
+.impacto-educacao{
+    padding:80px 10%; /* espaço interno */
+    text-align:center; /* centraliza conteúdo */
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+}
+
+.impacto-educacao h2{
+    font-size:40px; /* tamanho do título */
+    margin-bottom:20px; /* espaço abaixo */
+}
+
+.educacao-container{
+    display:flex; /* ativa Flexbox */
+    gap:25px; /* espaço entre itens */
+    justify-content:center; /* centraliza */
+    margin-top:40px; /* espaço acima */
+    flex-wrap:wrap; /* quebra linha se necessário */
+}
+
+.educacao-card{
+    background:#ffffff; /* fundo branco */
+    padding:25px; /* espaço interno */
+    width:260px; /* largura fixa */
+    border-radius:12px; /* bordas arredondadas */
+    box-shadow:0 6px 20px rgba(0,0,0,0.08); /* sombra suave */
+    transition:0.3s; /* animação */
+}
+
+.educacao-card:hover{
+    transform:scale(1.05); /* aumenta ao passar o mouse */
+}
+
+
+
+.card{
+    background:#1e293b; /* fundo escuro */
+    padding:30px; /* espaço interno */
+    width:260px; /* largura */
+    border-radius:15px; /* bordas arredondadas */
+    transition:0.3s; /* animação */
+    box-shadow:0 10px 30px rgba(0,0,0,0.3); /* sombra mais forte */
+}
+
+.card:hover{
+    transform:translateY(-10px); /* move o card para cima */
+    box-shadow:0 15px 40px rgba(0,0,0,0.4); /* aumenta a sombra */
+}
+
+.icone{
+    font-size:40px; /* tamanho do ícone */
+    margin-bottom:15px; /* espaço abaixo */
+}
